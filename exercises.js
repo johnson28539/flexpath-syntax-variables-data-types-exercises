@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_12();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -31,7 +31,7 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("Hello, world.");
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -49,8 +49,9 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
-
+let myAge = "47";
+const myName = "James";
+console.log(myAge + " " + myName);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -76,7 +77,11 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+const sum = num1 + num2;
+const subtract = num1 - num2;
+const multiply = num1 * num2;
+const divide = num1 / num2;
+console.log(sum, subtract, multiply, divide);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -94,9 +99,15 @@ function exercise_04() {
   */
 
   // CODE IN THE OPEN LINES BELOW
+let x;
+x = 50;
+console.log(typeof x);
 
-  const placeholder = "Delete this line and code here";
+x = "Today's date is";
+console.log(typeof x);
 
+x = false;
+console.log(typeof x);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -113,8 +124,10 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
-
+let isAvailable = true;
+console.log(isAvailable);
+isAvailable = !isAvailable;
+console.log(isAvailable);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -138,7 +151,15 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+let message = "We hold these truths to be self evident.";
+let upper = message.toUpperCase()
+console.log(upper);
+
+let lower = message.toLowerCase();
+console.log(lower);
+
+let length = message.length;
+console.log(length);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -165,7 +186,9 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+let name = "James";
+let greeting = `Hello ${name}, Welcome to JavaScript!`;
+console.log(greeting);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -186,8 +209,6 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
-
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -205,8 +226,14 @@ function exercise_09() {
   */
 
   // CODE IN THE OPEN LINES BELOW
+let book = {
+  title: "The Linux Kernel Coding Style",
+  author: "Bryan Brattoff",
+  pulishedYear: "2021",
+}
+console.log(book);
 
-  const placeholder = "Delete this line and code here";
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -225,8 +252,13 @@ function exercise_10() {
   */
 
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code here";
+let book = {
+  title: "The Linux Kernel Coding Style",
+  author: "Bryan Brattoff",
+  pulishedYear: "2021",
+}
+console.log(book.title);
+console.log(book["author"]);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -248,9 +280,27 @@ function exercise_11() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+//let book = {
+  //title: "The Linux Kernel Coding Style",
+  //author: "Bryan Brattoff",
+  //pulishedYear: "2021",
+//}
+//book.publishedYear = 2022;
+//book["genre"] = "Reference";
 
-  // CODE IN THE OPEN LINES ABOVE
+//console.log("Upating the lates published version:", book);
+let book = {
+    title: "2666",
+    author: "Roberto Bolano",
+    publishedYear: 2004,
+  };
+
+  book.publishedYear = 2024;
+  book["genre"] = "Detective Fiction";
+
+  console.log("Look at these changes!: ", book);
+
+// CODE IN THE OPEN LINES ABOVE
 }
 
 function exercise_12() {
@@ -267,9 +317,16 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+let book = {
+  title: "The Linux Kernel Coding Style",
+  author: "Bryan Brattoff",
+  pulishedYear: "2021",
+}
+delete book.author;
 
-  // CODE IN THE OPEN LINES ABOVE
+console.log(book);
+
+// CODE IN THE OPEN LINES ABOVE
 }
 
 function exercise_13() {
@@ -298,8 +355,7 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
-
+console.log()
   // CODE IN THE OPEN LINES ABOVE
 }
 
